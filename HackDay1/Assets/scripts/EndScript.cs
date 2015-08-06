@@ -20,7 +20,9 @@ public class EndScript : MonoBehaviour {
 		Debug.Log (col.gameObject.tag);
 		if (col.gameObject.tag == "Player") {
 			Debug.Log ("WIN");
-			Instantiate(winParticles,this.transform.position,this.transform.rotation);
+			Vector3 pos = this.transform.position;
+			pos.y += 1;
+			Instantiate(winParticles,pos,this.transform.rotation);
 			Application.LoadLevel(nextLevel);
 		}
 	}
