@@ -4,8 +4,8 @@ using System.Collections;
 public class CameraController : MonoBehaviour {
 	public GameObject player;
 	private Vector3 offset;
-	private int zoom = 60; 
-	public float smooth = 5;
+	private float zoom = 60f;
+	public float smooth = 5f;
 
 	// Use this for initialization
 	void Start () {
