@@ -15,8 +15,10 @@ public class BoundryBox : MonoBehaviour {
 
 	void OnTriggerExit(Collider other)
 	{
-		Debug.Log ("DEAD");
-		//Destroy(other.gameObject);
-		Application.LoadLevel (Application.loadedLevel);
+		if (other.gameObject.tag = "Player") {
+			Debug.Log ("DEAD");
+			//Destroy(other.gameObject);
+			Application.LoadLevel (Application.loadedLevel);
+		}
 	}
 }
