@@ -4,6 +4,7 @@ using System.Collections;
 public class EndScript : MonoBehaviour {
 
 	public GameObject winParticles;
+	public string nextLevel;
 
 	// Use this for initialization
 	void Start () {
@@ -20,6 +21,7 @@ public class EndScript : MonoBehaviour {
 		if (col.gameObject.tag == "Player") {
 			Debug.Log ("WIN");
 			Instantiate(winParticles,this.transform.position,this.transform.rotation);
+			Application.LoadLevel(nextLevel);
 		}
 	}
 }
