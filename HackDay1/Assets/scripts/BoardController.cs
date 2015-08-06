@@ -10,6 +10,12 @@ using System.Collections;
  **/
 public class BoardController : MonoBehaviour {
 
+	// Use this for initialization
+	void Start () {
+
+	}
+
+
 	void FixedUpdate ()
 	{
 		float moveHorizontal = Input.GetAxis ("Horizontal");
